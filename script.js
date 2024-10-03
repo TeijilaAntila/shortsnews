@@ -1,5 +1,4 @@
-const url = 'https://inshorts.deta.dev/news?category=science';
-
+const url = 'https://inshortsapi.vercel.app/news?category=national';
 fetch(url)
   .then(response => response.json())
   .then(data => {
