@@ -10,9 +10,8 @@ fetch(url)
       const image = article.image_url ? `<img src="${article.image_url}" alt="${article.title}" />` : '';
       item.innerHTML = `
         <h2>${article.title}</h2>
-                ${image}
-
         <p>${article.content}</p>
+        ${image}
       `;
       newsList.appendChild(item);
     });
